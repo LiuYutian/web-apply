@@ -1,0 +1,158 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 70px;
+    background: #CC0000;
+    line-height: 70px;
+}
+
+#logo {
+    color: #FFF;
+    font-size: 33px;
+    margin-left: 168px;
+    float: left;
+}
+
+#menu {
+    color: #FFF;
+    float: right;
+    margin-right: 181px;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 1px 34px;
+    font-size: 14px;
+}
+
+#menu li>a {
+    color:#FFF;
+    text-decoration: none;    // 下划线
+}
+
+#menu li:hover>a {
+    text-decoration: underline;    // 无下划线
+}
+
+#menu li.current>a{
+    color: #CA0007;
+}
+
+#menu li.current{
+    background-color: #FFF;
+}
+
+#gallery {
+    background-color: #66CEEC;
+    height: 439px;
+    position: relative;
+}
+
+#gallery .pics {
+    position: absolute;
+}
+
+#gallery .bar {
+    position: absolute;
+    top: 365px;
+    left: 210px;
+}
+
+#gallery .bar li {
+    border-top: 3px solid #FFF;
+    width: 40px;
+    display: inline-block;
+    margin-right: 3px;
+}
+
+#gallery .bar li.current {
+    border-color: #CA0007;
+}
+
+#middle ul {
+    text-align: center;
+    margin: 49px auto;
+}
+
+#middle li {
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    border-radius: 100%;
+    margin: 0 41px;
+}
+
+#i {
+    color:#FFF;
+    padding-top: 20px;
+}
+
+.radius {
+    margin-top: 20px;
+    color: #FFF;
+}
+
+#one {
+    background-color:#EC3635;
+}
+#two {
+    background:#E46B36;
+}
+#three {
+    background:#2F9DCC;
+}
+#four {
+    background:#49CE57;
+}
+
+#news {
+    background:#F3F3F3;
+    height:346px;
+}
+
+#core {
+    position: relative;
+    float: left;
+    background: #F3F3F3;
+    width: 300px;
+    height: 346px;
+    margin-left: 168px;
+}
+#newfont {
+    font-size: 22px;
+    color: red;
+    height: 69px;
+    line-height: 80px;
+}
+#newjpg{
+    width: 292px;
+    height: 228px;
+}
+#newsList{
+    float: left;
+    width: 490px;
+    height: 346px;
+    background: #CACACA;;
+}
+#newSelect {
+    float: left;
+    width: 240px;
+    height: 346px;
+    background: #AAAAAA;
+}
+#newSelect ul {
+    margin-top: 20px;
+    margin-left: 16px;
+}
+#newSelect ul li {
+    display:inherit;
+}
+#newSelect ul li button{
+    width: 209px;
+    height: 61px;
+    margin-top: 8px;
+    margin-left: 0px;
+}
