@@ -1,100 +1,88 @@
 body, ul, li {
     margin: 0;
     padding: 0;
+    display: block;
 }
-
 header {
     height: 70px;
     background: #CC0000;
     line-height: 70px;
 }
-
 #logo {
     color: #FFF;
     font-size: 33px;
     margin-left: 168px;
     float: left;
 }
-
 #menu {
     color: #FFF;
     float: right;
     margin-right: 181px;
 }
-
 #menu li {
     display: inline-block;
     padding: 1px 34px;
     font-size: 14px;
 }
-
 #menu li>a {
     color:#FFF;
     text-decoration: none;    // 下划线
 }
-
 #menu li:hover>a {
     text-decoration: underline;    // 无下划线
 }
-
 #menu li.current>a{
     color: #CA0007;
 }
-
 #menu li.current{
     background-color: #FFF;
 }
-
 #gallery {
     background-color: #66CEEC;
     height: 439px;
     position: relative;
 }
-
 #gallery .pics {
     position: absolute;
 }
-
+#gallery img {
+    width: 1351px;
+    height: 439px;
+}
 #gallery .bar {
     position: absolute;
     top: 365px;
     left: 210px;
 }
-
 #gallery .bar li {
     border-top: 3px solid #FFF;
     width: 40px;
     display: inline-block;
     margin-right: 3px;
 }
-
 #gallery .bar li.current {
     border-color: #CA0007;
 }
-
 #middle ul {
     text-align: center;
     margin: 49px auto;
 }
-
 #middle li {
     display: inline-block;
     height: 160px;
     width: 160px;
     border-radius: 100%;
     margin: 0 41px;
+    cursor: pointer;
 }
-
-#i {
+.ico {
     color:#FFF;
     padding-top: 20px;
 }
-
 .radius {
     margin-top: 20px;
     color: #FFF;
 }
-
 #one {
     background-color:#EC3635;
 }
@@ -107,12 +95,10 @@ header {
 #four {
     background:#49CE57;
 }
-
 #news {
     background:#F3F3F3;
     height:346px;
 }
-
 #core {
     position: relative;
     float: left;
@@ -135,24 +121,212 @@ header {
     float: left;
     width: 490px;
     height: 346px;
-    background: #CACACA;;
+    background:#F3F3F3;
+}
+#newsButton {
+    background:#F3F3F3;
+    width: 490px;
+    height: 60px;
+}
+#newsButtonPosition {
+    width: 147px;
+    height: 10px;
+    padding-top: 29px;
+    padding-left: 343px;
+    display: flex;
+}
+#newsButtonColorCompany {
+    width: 80px;
+    height: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    color: #000;
+    line-height: 25px;
+    background: #d40002;
+    text-align: center;
+    cursor: pointer;
+}
+#newsButtonColorCompany:hover{
+    color: #FFF;
+}
+#newsButtonColorBusiness {
+    width: 80px;
+    height: 25px;
+    margin-right: 3px;
+    display: inline-block;
+    color: #000;
+    background: #A8A8A8;
+    line-height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+#newsButtonColorBusiness:hover {
+    color: #FFF;
+}
+#newsMiddle {
+    background: #F3F3F3;
+    margin-left: 15px;
+    width: 465px;
+    height: 79px;
+    border-bottom:1px dashed #000
+}
+#newsTitle {
+    padding: 8px 0px 2px 0px;
+    width: 464px;
+    height: 24px;
+    font-size: 14px;
+    color: red;
+    cursor: pointer;
+}
+#newsMiddle div a {
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+    width: 10px;
+}
+#newsMiddle div:hover>a {
+    text-decoration: underline;
+}
+#newsListItem {
+    margin-left: 15px;
+    width: 465px;
+    height: 206px;
+}
+#newsListItem ul {
+    margin-left: 20px;
+    padding-top: 12px;
+    font-size: 19px;
+}
+#newsListItem ul li {
+    display: list-item;
+}
+#newsListItem a{
+    color:#000;
+    text-decoration: none;
 }
 #newSelect {
     float: left;
     width: 240px;
     height: 346px;
-    background: #AAAAAA;
+    background: #F3F3F3;
 }
 #newSelect ul {
-    margin-top: 20px;
+    margin-top: 28px;
     margin-left: 16px;
 }
 #newSelect ul li {
     display:inherit;
 }
-#newSelect ul li button{
+#newSelect ul li div{
     width: 209px;
     height: 61px;
+    line-height: 65px;
+    text-align: center;
     margin-top: 8px;
     margin-left: 0px;
+}
+#onebuttom {
+    background:#9270cf;
+}
+#onebuttom:hover {
+    background:#CACACA;
+}
+#twobuttom {
+    background:#d1976f;
+}
+#twobuttom:hover {
+    background:#CACACA;
+}
+#threebutton {
+    background:#6dccd0;
+}
+#threebutton:hover {
+    background:#CACACA;
+}
+#fourbutton {
+    background:#cf7092;
+}
+#fourbutton:hover {
+    background:#CACACA;
+}
+#newSelect div a {
+    color:#000;
+    text-decoration: none;    // 下划线
+}
+#newSelect div a:hover {
+    text-decoration: underline;    // 无下划线
+    color:red;
+}
+#newSelect ul li div a i{
+    color:#FFF;
+    margin-right:15px;
+}
+#case {
+    height: 480px;
+}
+#caseTitle {
+    padding: 48px 168px 27px 168px;
+    font-size: 23px;
+}
+#caseRank{
+    color:red;
+}
+#cases{
+    color:#b2b2b2;
+}
+#imgArray {
+    position: relative;
+    width: 1039px;
+    left: 165px;
+    top: -3px;
+}
+.img {
+    width: 330px;
+    height: 166px;
+    float: left;
+    background: red;
+    margin: 3px 9px 9px 3px;
+}
+#partner {
+    height: 158px;
+}
+#pratenrTitle{
+    margin-left: 170px;
+    padding-top: 8px;
+    font-size: 22px;
+}
+#partnerRank{
+    color:red;
+}
+#partners{
+    color: #b2b2b2;
+}
+#pratenrlogArray{
+    margin-top: 19px;
+    margin-left: 168px;
+}
+.praterlog{
+    width: 140px;
+    height: 49px;
+    background: #DDDDDD;
+    float: left;
+    margin-right: 35px;
+}
+#bottom{
+    background: #4c4c4c;
+    height: 53px;
+    line-height:53px;
+    text-align: center;
+    color:#FFF;
+}
+#bottom a{
+    color:#FFF;
+    text-decoration: none;
+}
+#location{
+    background: #313131;
+    height: 49px;
+    line-height:53px;
+    text-align: center;
+    color:#FFF;
 }
